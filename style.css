@@ -9,7 +9,6 @@
 }
 * {
     box-sizing: border-box;
-    border: 1px solid black;
     font-family: 'Calibri';
     font-size: 1rem;
     margin: 0;
@@ -131,7 +130,7 @@
 .top-videos-title {
     color: var(--primary-txt-color);
     font-size: 1.5rem;
-    padding: 2%;
+    padding: 2% 0;
     width: 70%;
 }
 
@@ -139,6 +138,12 @@
     display: flex;
     width: 70%;
 }
+
+.secondary-container {
+    display: flex;
+    margin-bottom: 5%;
+}
+
 
 .main-video {
     background-image: url("./assets/america-campeon.png");
@@ -150,6 +155,18 @@
     width: 60%;
 }
 
+.secondary-videos {
+    background-image: url("./assets/america-campeon.png");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    opacity: .85;
+    width: 60%;
+
+}
+
 .control-icon-play {
     display: flex;
     justify-content: center;
@@ -158,6 +175,10 @@
 
 .icon-play-orange {
     width: 10%;
+}
+
+.secondary-icon-play-orange {
+    width: 20%;
 }
 
 .info-main-video {
@@ -185,7 +206,15 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+.secondary-text {
+    color: var(--primary-txt-color-txt-color);
+    padding: 0 3%;
+    width: 50%;
+}
 .video-list {
     margin: 0 0 0 2%;
     width: 40%;
+    overflow-x: scroll;
+    
 }
